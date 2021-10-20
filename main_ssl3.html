@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSL Assignment 3</title>
+    <link rel="stylesheet" href="main_style.css">
+</head>
+<body>
+<header>
+    <h1>Welcome to my HTML webpage !</h1>
+</header>    
+
+    <main>
+        <section>            <!-- 720 by 360 for video-->
+            <h1 class="head1"> Embedding audio and video</h1>
+            <div style="float: left; padding-left: 30px;">
+                <h2 style="color: springgreen;text-decoration: underline;text-decoration-style: wavy;text-decoration-color:darkorange;"><i> Video</i></h2> 
+                <iframe width="720" height="360" src="https://www.youtube.com/embed/GwIo3gDZCVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div >
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                <h2 style="color: springgreen;text-decoration: underline;text-decoration-color: darkorange;text-decoration-style: wavy;"><i> Audio</i></h2>
+                <audio src="sample-15s.mp3" controls></audio>
+            </div>
+        </section>
+        <section style="background-color:rgb(255, 251, 0);">
+            <h1 class="head2">Embedding images</h1>
+        <div style="float: left;padding-left: 20px;">
+            <h2 style="color: springgreen;text-decoration: underline;text-decoration-color:darkorange;text-decoration-style: wavy;"><i> Image map</i></h2>
+            <img src="testimage1.jpg" alt="first image" width="400px" height="400px" usemap="#testimage1">
+            <br>
+
+            <map name="testimage1">
+                <area shape="rect" coords="0,80,80,200" href="https://google.com" alt="imagemap">
+               
+            </map>
+        </div> 
+            <div style="padding-top: 10px;text-align: right;padding-right: 50px;" >
+             <h2 style="color: springgreen;text-decoration: underline;text-decoration-color: darkorange;text-decoration-style: wavy;"><i>Clickable image</i></h2>
+              <a href="https://google.com" target="_blank">
+                <img alt="this pic is not available" src="https://image.shutterstock.com/image-photo/new-york-city-skyline-600w-170076830.jpg" width="400px" height="400px">
+            </a>
+            </div>
+        </section>
+        <section class="lit">
+            <h1 class="head3">Literature</h1>
+            <div style="text-align: left;padding-left: 10px;">
+                <h3><i> <u>Quotation</u></i></h3>
+            
+<ol>                                         <!-- Nested list -->
+    <li>Type 1</li>
+    <ul>
+        <li>HTML is <q>a <strong>markup</strong> language according to this quote</q></li>
+        <li>Believe in your <q>dreams</q></li>
+    </ul>
+    <li>Type 2</li>
+    <ul>
+        <li>Sleep <del>more</del> less and <q>dream more</q></li>
+        <li>Wake me up when <q>I am famous </q></li>
+    </ul>
+</ol>
+           <h3><i> <u>Citation</u></i></h3>
+           <ol type="I">
+            <li>
+                <cite>
+                HTML 5 version can be obtained from <a href="https://google.com">Google</a>
+            </cite>
+           </li>
+            <li><cite>Mozilla firefox browser is made by <a href="https://www.mozilla.org/en-US/firefox/">Mozilla</a></cite></li>
+            <li><cite>Microsoft recently announced their <sup>next</sup> <sub>version</sub> of Windows</cite></li>
+          </ol>    
+           
+        <h3><i><u>Code</u></i></h3>
+        <pre>
+        <code>
+  #include&lt;stdio.h&gt;  
+  int main()    
+ {              
+    int a;         
+    printf("hello how are you\n");  
+    scanf("%d",&a);     
+    return 0;        
+  }
+            </code>
+        </pre>   
+        </div>  
+        </section>
+
+        <section>
+            <h1 class="head4">Time complexity Table</h1>
+            <table class="tc">              <!-- using table tag for tables -->
+                <thead>
+                  <tr>
+                    <th class="tc-head">Algorithm</th>
+                    <th class="tc-head">Best Case</th>
+                    <th class="tc-head">Average Case</th>
+                    <th class="tc-head">Worst Case</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tc-first">Linear Search</td>
+                    <td class="tc-second">O(1)</td>
+                    <td class="tc-second">O(n)</td>
+                    <td class="tc-second">O(n)</td>
+                  </tr>
+                  <tr>
+                    <td class="tc-first">Binary Search</td>
+                    <td class="tc-second">O(1)</td>
+                    <td class="tc-second">O(log n)</td>
+                    <td class="tc-second">O(log n)</td>
+                  </tr>
+                  <tr>
+                    <td class="tc-first">Bubble sort</td>
+                    <td class="tc-second">O(n)</td>
+                    <td class="tc-second">O(n^2)</td>
+                    <td class="tc-second">O(n^2)</td>
+                  </tr>
+                  <tr>
+                    <td class="tc-first">Selection sort</td>
+                    <td class="tc-second">O(n^2)</td>
+                    <td class="tc-second">O(n^2)</td>
+                    <td class="tc-second">O(n^2)</td>
+                  </tr>
+                </tbody>
+                </table> 
+                <h1> <mark>A paragraph about...</mark> </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae at ratione eveniet quam facere, neque assumenda eaque, qui nam enim quos facilis. Dolores minus quo culpa nihil voluptas corporis omnis ratione dolorum, rem ipsam, reprehenderit eveniet ipsa officiis quos sit, hic eos temporibus earum molestiae. Labore tenetur delectus obcaecati autem, veniam doloremque nisi expedita dolorum nesciunt tempora illum tempore quam eveniet sed asperiores architecto aliquam itaque maxime dolorem. Blanditiis, fugit? Quos molestias, fuga maxime quibusdam ab aperiam laudantium neque odio eligendi sint dolore nemo, voluptas similique dolorum consectetur ex. Enim blanditiis ut voluptas neque aliquid soluta eveniet aperiam quibusdam voluptate.</p>
+        </section>
+        <section>
+            <div class="container">             <!-- for creating a payment form-->
+                <form action="">
+                 <h1 class="main_heading"> Payment form</h1>
+                 <h2 class="head5"> --> Contact information</h2>
+                 <p style="text-align: left;">Name: <input type="text" name="name id="name" required placeholder="Ex: Rahul kumar"></p>
+                 <fieldset>
+                     <legend style="text-align: left;">Gender</legend>
+                     <p style="text-align: left;"> Male <input type="radio" name="Gender" id="Gender" required>
+                     Female <input type="radio" name="Gender" id="Gender">
+                     </p>
+           
+                 </fieldset>
+                 <p style="text-align: left;">Address:</p>
+                 <textarea name="address" id="address" cols="30" rows="10" placeholder="Ex: A Road, B city, C State 1100XXX"></textarea>
+                 <p style="text-align: left;">Email: <input type="email" name="email" id="email" placeholder="Ex: xyz@gmail.com"></p>
+                 <p style="text-align: left;">Pincode <input type="number" name="Pincode" id="Pincode" placeholder="Ex: 1100XX"></p>
+                   <h2 class="head6"> --> Payment information</h2>
+                   <p style="text-align: left;"> Card type:
+                       <select name="card type" id="card type">
+                       <option value=""> --Select a card type--</option>
+                       <option value="Visa">Visa</option>
+                       <option value=""Mastercard">Mastercard</option>
+                       <option value="Rupay">Rupay</option>
+                   </select>
+               </p>
+               <p style="text-align: left;">Card Number: <input type="number" name="cardnumber" id="cardnumber" placeholder="Ex: 1111 2222 3333 4444"></p>
+               <p style="text-align: left;">Expiration date: <input type="date" name="expdate" id="expdate"></p>
+               <p style="text-align: left;">CVV: <input type="password" name="cvv" id="cvv"></p>
+               <input type="submit" value="Pay now" onclick="alert('Payment received ! Thank you visiting my website !')">
+           
+           
+               
+               </form>
+           </div>
+        </section>
+      
+    </main>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">About me</a>
+        <a href="#">Disclaimer</a>
+        <a href="#">&copy; 2021 | Siddharth Shankar | CSE, IIT Dharwad</a>
+    </footer>
+</body>
+
+</html>
