@@ -13,5 +13,3 @@ Editing this file for third time in local machine
 
 
 This is DUMMY main branch readme file.
-
-This is Update-readme branch readme file
